@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "486827023047",
+    "project_id": "pizza-order-6a7f1",
+    "storage_bucket": "pizza-order-6a7f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486827023047:android:e4453b0e1d1235ebf83ce2",
+        "android_client_info": {
+          "package_name": "com.example.pizzaaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486827023047-ed1khg8l75vlci8qiupgrr7kfin45o4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCNsE-Pn1dQSA49oBxMvJKXnBzuJrQqdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486827023047-ed1khg8l75vlci8qiupgrr7kfin45o4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486827023047:android:c3827e67614beb9ef83ce2",
+        "android_client_info": {
+          "package_name": "com.pizza.order"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486827023047-ed1khg8l75vlci8qiupgrr7kfin45o4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCNsE-Pn1dQSA49oBxMvJKXnBzuJrQqdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486827023047-ed1khg8l75vlci8qiupgrr7kfin45o4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
