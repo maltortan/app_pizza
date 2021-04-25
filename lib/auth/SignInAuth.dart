@@ -5,11 +5,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 // Import the firebase_core plugin
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:pizzaaa/screens/HomeScreen.dart';
+import 'package:pizzaaa/screens/homeScreen.dart';
 import 'package:provider/provider.dart';
 
-import '../screens/LoginScreen.dart';
-import '../SignupScreen.dart';
+import '../screens/loginScreen.dart';
+import '../screens/signupScreen.dart';
 
 class SignInAuth extends StatelessWidget {
 

@@ -2,12 +2,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pizzaaa/app/theme.dart';
-import 'file:///E:/projects/pizza/app_pizza/lib/screens/LoginScreen.dart';
+import 'package:pizzaaa/screens/pizzaScreen.dart';
+import 'file:///E:/projects/pizza/app_pizza/lib/screens/loginScreen.dart';
 import 'package:provider/provider.dart';
 
-import '../auth/SignInAuth.dart';
-import '../auth/authentication_service.dart';
-import '../backend/Backend.dart';
+import 'auth/SignInAuth.dart';
+import 'auth/authentication_service.dart';
+import 'backend/backend.dart';
+
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,12 +25,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
         providers: [
-          Provider<AuthenticationService>(
+          ChangeNotifierProvider<AuthenticationService>(
             create: (_) => AuthenticationService(FirebaseAuth.instance),
           ),
           Provider<Backend>(
             create: (_) => Backend(),
           ),
+
           StreamProvider(
             create: (context) =>
             context.read<AuthenticationService>().authStateChanges,
@@ -71,7 +74,7 @@ class MyApp extends StatelessWidget {
                 }
               },
             ),
-            '/': (context) => LoginScreen(),
+
 
           },
 
