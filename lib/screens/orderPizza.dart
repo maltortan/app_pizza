@@ -115,8 +115,8 @@ class _OrderPizzaState extends State<OrderPizza> {
                                 Text(
                                   'Select Topping',
                                   style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold,
                                       fontSize: 22),
                                 ),
                                 new Column(
@@ -203,8 +203,8 @@ class _OrderPizzaState extends State<OrderPizza> {
                                 Text(
                                   'Size Of Pizza',
                                   style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold,
                                       fontSize: 22),
                                 ),
                                 new Column(
