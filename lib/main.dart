@@ -2,8 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pizzaaa/app/theme.dart';
-import 'package:pizzaaa/screens/pizzaScreen.dart';
-import 'file:///E:/projects/pizza/app_pizza/lib/screens/loginScreen.dart';
+
 import 'package:provider/provider.dart';
 
 import 'auth/SignInAuth.dart';
