@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:pizzaaa/auth/authentication_service.dart';
 
 import 'package:pizzaaa/screens/pizzaList.dart';
-import 'package:pizzaaa/screens/pizzaScreen.dart';
+
 import 'package:pizzaaa/screens/appBar.dart';
 
 import 'package:provider/provider.dart';
@@ -20,8 +20,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+
   static List<Widget> _widgetOptions = <Widget>[
     PizzaList(),
     Favourites(),
@@ -60,8 +59,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 title: Text('Pizza App',
                   style: TextStyle(
                       fontSize: 25,
-                    color: Colors.white
-                  ),),
+                    color: Colors.white,
+
+                  ),
+                ),
                 leading: 1,
                 actions: [
                   IconButton(

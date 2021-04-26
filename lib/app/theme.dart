@@ -27,14 +27,8 @@ class AppTheme{
 
   static TextTheme _getTextTheme(Brightness brightness){
     final themeData= ThemeData(brightness: brightness);
-    return GoogleFonts.exo2TextTheme(themeData.textTheme).copyWith(
-      headline1: GoogleFonts.orbitron(),
-      headline2: GoogleFonts.orbitron(),
-      headline3: GoogleFonts.orbitron(),
-      headline4:  GoogleFonts.orbitron(),
-      headline5:  GoogleFonts.orbitron(),
-      headline6:  GoogleFonts.orbitron(),
+    return GoogleFonts.pacificoTextTheme(themeData.textTheme);
 
-    );
+
   }
 }

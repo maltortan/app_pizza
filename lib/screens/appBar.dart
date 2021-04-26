@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pizzaaa/auth/authentication_service.dart';
 
 import 'package:provider/provider.dart';
@@ -52,6 +53,7 @@ class _FrosAppbarState extends State<FrosAppbar> {
                   children: [
                       widget.leading!=null?Stack(
                         children: [
+                          //leading
                           IconButton(
                             icon: Icon(
                               Icons.shopping_cart,
@@ -60,6 +62,7 @@ class _FrosAppbarState extends State<FrosAppbar> {
                             onPressed: () => Navigator.push(context, MaterialPageRoute(
                                 builder: (context) => Cart())),
                           ),
+
                           Positioned(
                             top: 25,
                             left: 28,
@@ -72,10 +75,14 @@ class _FrosAppbarState extends State<FrosAppbar> {
                               color: Colors.red
                             ),
                             child: Center(
-                              child: Text(context.read<AuthenticationService>().cartList().length.toString(),style: TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.white
-                              ),),
+                              child: Text(context.read<AuthenticationService>().cartList().length.toString(),
+                                  style: GoogleFonts.lato(
+                                    textStyle: Theme.of(context).textTheme.headline4,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w700,
+                                    fontStyle: FontStyle.italic,
+                                  ),
+                              ),
                             )
                             ,
                           )
